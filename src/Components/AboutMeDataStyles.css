@@ -1,0 +1,124 @@
+.about-container{
+    background-color: rgb(80, 76, 76);
+    width: 100vw;
+}
+.about-container h1{
+    text-align: center;
+    color: yellow;
+    font-size: 3rem;
+    padding: 20px;
+}
+.about-content{
+    display: flex;
+}
+.about-content img{
+    width: 700px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    background-position: center;
+    object-fit: cover;
+}
+.about-content h2{
+    color: #fff;
+    padding: 10px;
+
+}
+.about-content span{
+    font-size: 2.2rem;
+    color: cyan;
+  font-family: italic;
+  letter-spacing: 2px;
+}
+.about-content p{
+    color: #fff;
+    padding: 15px 70px 15px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.about-content .btn-dark{
+    background-color: yellow;
+    color: #000;
+    padding: 15px;
+    border: 1px solid yellow;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.about-content .btn-dark:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.skills-container .each-container{
+    box-shadow: 5px 5px 15px black;
+    padding:  20px 50px 50px 50px;
+
+}
+.each-container h3{
+    color: yellow;
+    padding-bottom: 15px;
+}
+.each-container ul li{
+    color: #fff;
+    padding: 8px;
+    font-weight: 700;
+}
+.each-container ul i{
+    color: rgb(168, 168, 24);
+}
+.each-container p i{
+    color: #fff;
+}
+
+/* about component styling in routes */
+.about-banner-img{
+    width: 100vw;
+    height: 100vh;
+}
+.about-banner-img img{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width:992px) {
+    .about-container{
+        width: 100vw;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-content span{
+        font-size: 1.5rem;
+    }
+    .about-content p{
+        font-size: 15px;
+        line-height: 20px;
+        padding: 20 30px;
+    }
+    .about-content img{
+        height: 50vh;
+        width: 90vw;
+    }
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .skills-container .each-container{
+        margin-bottom: 30px;
+    }
+    .about-banner-img img{
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        object-fit: cover;
+    }
+
+}

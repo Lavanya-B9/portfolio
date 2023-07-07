@@ -1,0 +1,96 @@
+.project-container{
+    background-color: rgb(93, 88, 88);
+    width: 100vw;
+}
+.project-container h1{
+    color: yellow;
+    padding: 15px;
+    font-size: 3rem;
+    text-align: center;
+}
+.project-container .project-content{
+    display: flex;
+  margin: 50px 50px 0 50px;
+  column-gap: 80px;
+}
+.project-content .each-project{
+    box-shadow: 5px 5px 15px black;
+    padding: 20px 30px 50px 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.project-content .each-project:hover{
+    transform:scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+.each-project h3{
+    color: rgb(8, 8, 109);
+    padding-bottom:10px ;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+.each-project p{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: left;
+}
+.each-project .btn-light{
+    margin-top: 20px;
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid rgb(9, 9, 197);
+    font-weight: 800;
+}
+.each-project a{
+    color: #fff;
+    text-decoration: none;
+}
+.each-project .btn-light:hover{
+    background-color: blue;
+}
+
+/* Project styles  in routes*/
+.img-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-container .img img{
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    object-fit: cover;
+
+}
+.img:after{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+.img-container h1{
+    color: yellow;
+    position: relative;
+    top: -350px;
+    text-align: center;
+    font-size: 3.8rem;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:992px){
+    .project-container .project-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-content .each-project:hover{
+        transform:scale(1);
+        transition: 0.3s ease-in-out;
+    }
+
+}

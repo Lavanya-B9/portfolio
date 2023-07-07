@@ -1,0 +1,72 @@
+.footer-container{
+    width: 100vw;
+   
+    background-color: rgb(19, 18, 18);
+    padding: 30px 100px;
+    color: #fff;
+   
+}
+.footer-container h3{
+    color: yellow;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    padding: 30px 0 40px 0;
+    text-decoration: underline;
+}
+.footer-container .desc-container{
+    display: flex;
+    margin-left: 50px;
+}
+.desc-container .my-data{
+    display: flex;
+}
+.desc-container .left{
+    padding-right: 300px;
+}
+.desc-container h4{
+    color: yellow;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.desc-container i{
+font-size: 1.5rem;
+padding: 10px;
+cursor: pointer;
+}
+.desc-container a i{
+    color: #fff;
+}
+.my-data {
+    padding: 10px;
+}
+.desc-container input,textarea{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    outline: 1px solid yellow;
+    border: none;
+    font-size: 15px;
+}
+
+@media screen and (max-width:992px){
+    .footer-container{
+        width: 100vw;
+        padding: 20px 50px;
+    }
+    .footer-container .desc-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-container .left{
+        padding: 0;
+    }
+    .desc-container h4{
+        font-size: 1rem;
+        padding: 5px;
+        white-space: nowrap;
+    }
+}
