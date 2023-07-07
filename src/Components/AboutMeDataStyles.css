@@ -114,6 +114,11 @@
     .skills-container .each-container{
         margin-bottom: 30px;
     }
+    .about-banner-img{
+        width:100vw;
+        height: 100vh;
+        }
+    
     .about-banner-img img{
         height: 100vh;
         width: 100vw;
